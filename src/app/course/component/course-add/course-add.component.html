@@ -1,0 +1,17 @@
+<h1 mat-dialog-title>Ajouter un cours</h1>
+<mat-dialog-content>
+  <mat-form-field appearance="fill">
+    <input matInput placeholder="Titre" type="text" required [(ngModel)]="title">
+  </mat-form-field>
+  <mat-form-field appearance="fill">
+    <textarea matInput placeholder="Description" type="text" [(ngModel)]="description"></textarea>
+  </mat-form-field>
+  <mat-form-field appearance="fill">
+    <input matInput placeholder="Capacité" type="number" [(ngModel)]="capacity">
+  </mat-form-field>
+</mat-dialog-content>
+
+<mat-dialog-actions>
+  <button mat-raised-button color="warn" (click)="close()">Annuler</button>
+  <button mat-raised-button color="primary" (click)="save()">Ajouter</button>
+</mat-dialog-actions>
