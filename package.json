@@ -5,9 +5,11 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build planner-core-core-ui-angular",
+    "build-prod": "ng build planner-core-core-ui-angular --configuration production",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "build-client": "ng build planner-core-core-client-angular --configuration development",
+    "build-client-prod": "ng build planner-core-core-client-angular --configuration production",
     "lint": "ng lint"
   },
   "private": true,
