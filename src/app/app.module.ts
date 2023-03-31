@@ -1,5 +1,5 @@
 import { HttpClientModule } from '@angular/common/http';
-import { NgModule } from '@angular/core';
+import {CUSTOM_ELEMENTS_SCHEMA, NgModule} from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -17,6 +17,7 @@ import { MatInputModule } from '@angular/material/input';
 import { MatCardModule } from '@angular/material/card';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { ApiModule } from 'planner-core-core-client-angular';
+import {RouterModule} from "@angular/router";
 
 @NgModule({
   declarations: [
@@ -37,9 +38,11 @@ import { ApiModule } from 'planner-core-core-client-angular';
     MatInputModule,
     MatCardModule,
     MatGridListModule,
-    ApiModule
+    ApiModule,
+    RouterModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  schemas: [ CUSTOM_ELEMENTS_SCHEMA]
 })
 export class AppModule { }
