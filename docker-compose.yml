@@ -6,7 +6,7 @@ services:
       - "8081:8080"
     restart: always
   ynov-core-core-ui-angular:
-    image: "nexus-ynov-sandbox.asys-cloud.fr/repository/ynov-docker/ynov-core-core-ui-angular:1.9.0"
+    image: "nexus-ynov-sandbox.asys-cloud.fr/repository/ynov-docker/ynov-core-core-ui-angular:1.11.0"
     ports:
       - "81:80"
     extra_hosts:
