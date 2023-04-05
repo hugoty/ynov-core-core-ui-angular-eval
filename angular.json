@@ -114,6 +114,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:ng-packagr",
           "options": {
+            "outputPath": "dist/planner-core-core-ui-angular",
             "project": "projects/planner-core-core-client-angular/ng-package.json"
           },
           "configurations": {
