@@ -1,0 +1,14 @@
+version: "3.4"
+services:
+  ynov-core-core-api-java:
+    image: "nexus-ynov-sandbox.asys-cloud.fr/repository/ynov-docker/planner-core-core-api-java:0.0.1"
+    ports:
+      - "8081:8080"
+    restart: always
+  ynov-core-core-ui-angular:
+    image: "nexus-ynov-sandbox.asys-cloud.fr/repository/ynov-docker/ynov-core-core-ui-angular:1.9.0"
+    ports:
+      - "81:80"
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    restart: always
