@@ -11,7 +11,7 @@ pipeline {
     stage('NPM et LINT') {
       steps {
         bat 'npm install'
-        bat 'npm run lint'
+        bat 'npm run lint --fix'
       }
 
     }
